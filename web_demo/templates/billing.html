@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Billing Demo</title>
+</head>
+
+<body>
+
+<h2>Billing Demo</h2>
+
+<form method="POST">
+    <input name="medicine" placeholder="Medicine">
+    <input name="qty" placeholder="Qty">
+    <button type="submit">Add</button>
+</form>
+
+{% if result %}
+<p>Name: {{result[0]}}</p>
+<p>Rate: {{result[1]}}</p>
+<p>Qty: {{result[2]}}</p>
+<p>Total: {{result[3]}}</p>
+{% endif %}
+
+</body>
+</html>
